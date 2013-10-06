@@ -22,6 +22,7 @@
 		A4E4F13A1801713800B21CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1191801713800B21CA9 /* UIKit.framework */; };
 		A4E4F1421801713800B21CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4E4F1401801713800B21CA9 /* InfoPlist.strings */; };
 		A4E4F1441801713800B21CA9 /* My_PageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F1431801713800B21CA9 /* My_PageControlTests.m */; };
+		A4E4F14F180171F300B21CA9 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F14E180171F300B21CA9 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		A4E4F13F1801713800B21CA9 /* My PageControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My PageControlTests-Info.plist"; sourceTree = "<group>"; };
 		A4E4F1411801713800B21CA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4E4F1431801713800B21CA9 /* My_PageControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_PageControlTests.m; sourceTree = "<group>"; };
+		A4E4F14D180171F300B21CA9 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		A4E4F14E180171F300B21CA9 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				A4E4F12A1801713800B21CA9 /* Main_iPad.storyboard */,
 				A4E4F12D1801713800B21CA9 /* FTViewController.h */,
 				A4E4F12E1801713800B21CA9 /* FTViewController.m */,
+				A4E4F14D180171F300B21CA9 /* MyViewController.h */,
+				A4E4F14E180171F300B21CA9 /* MyViewController.m */,
 				A4E4F1301801713800B21CA9 /* Images.xcassets */,
 				A4E4F11C1801713800B21CA9 /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			files = (
 				A4E4F1261801713800B21CA9 /* FTAppDelegate.m in Sources */,
 				A4E4F1221801713800B21CA9 /* main.m in Sources */,
+				A4E4F14F180171F300B21CA9 /* MyViewController.m in Sources */,
 				A4E4F12F1801713800B21CA9 /* FTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
