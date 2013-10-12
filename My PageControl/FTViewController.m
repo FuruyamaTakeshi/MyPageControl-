@@ -75,7 +75,6 @@
         [self addChildViewController:controller];
         [self.scrollView addSubview:controller.view];
         [controller didMoveToParentViewController:self];
-        
     }
 }
 
