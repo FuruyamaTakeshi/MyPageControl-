@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4082A571809514300D5ABB0 /* FTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4082A511809514300D5ABB0 /* FTCollectionViewController.m */; };
 		A4082A5D180A8A2300D5ABB0 /* FTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4082A5C180A8A2300D5ABB0 /* FTNavigationViewController.m */; };
+		A4082A6F180C131900D5ABB0 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4082A6E180C131900D5ABB0 /* FTViewController.m */; };
 		A4E4F1161801713800B21CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1151801713800B21CA9 /* Foundation.framework */; };
 		A4E4F1181801713800B21CA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1171801713800B21CA9 /* CoreGraphics.framework */; };
 		A4E4F11A1801713800B21CA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1191801713800B21CA9 /* UIKit.framework */; };
@@ -17,7 +18,6 @@
 		A4E4F1261801713800B21CA9 /* FTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F1251801713800B21CA9 /* FTAppDelegate.m */; };
 		A4E4F1291801713800B21CA9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E4F1271801713800B21CA9 /* Main_iPhone.storyboard */; };
 		A4E4F12C1801713800B21CA9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E4F12A1801713800B21CA9 /* Main_iPad.storyboard */; };
-		A4E4F12F1801713800B21CA9 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E4F12E1801713800B21CA9 /* FTViewController.m */; };
 		A4E4F1311801713800B21CA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E4F1301801713800B21CA9 /* Images.xcassets */; };
 		A4E4F1381801713800B21CA9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1371801713800B21CA9 /* XCTest.framework */; };
 		A4E4F1391801713800B21CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F1151801713800B21CA9 /* Foundation.framework */; };
@@ -41,6 +41,8 @@
 		A4082A511809514300D5ABB0 /* FTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCollectionViewController.m; sourceTree = "<group>"; };
 		A4082A5B180A8A2300D5ABB0 /* FTNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNavigationViewController.h; sourceTree = "<group>"; };
 		A4082A5C180A8A2300D5ABB0 /* FTNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNavigationViewController.m; sourceTree = "<group>"; };
+		A4082A6D180C131900D5ABB0 /* FTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
+		A4082A6E180C131900D5ABB0 /* FTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		A4E4F1121801713800B21CA9 /* My PageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My PageControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E4F1151801713800B21CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4E4F1171801713800B21CA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,8 +55,6 @@
 		A4E4F1251801713800B21CA9 /* FTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAppDelegate.m; sourceTree = "<group>"; };
 		A4E4F1281801713800B21CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		A4E4F12B1801713800B21CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A4E4F12D1801713800B21CA9 /* FTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
-		A4E4F12E1801713800B21CA9 /* FTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		A4E4F1301801713800B21CA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4E4F1361801713800B21CA9 /* My PageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My PageControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E4F1371801713800B21CA9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				A4082A5B180A8A2300D5ABB0 /* FTNavigationViewController.h */,
+				A4082A6D180C131900D5ABB0 /* FTViewController.h */,
+				A4082A6E180C131900D5ABB0 /* FTViewController.m */,
 				A4082A5C180A8A2300D5ABB0 /* FTNavigationViewController.m */,
 				A4082A501809514300D5ABB0 /* FTCollectionViewController.h */,
 				A4082A511809514300D5ABB0 /* FTCollectionViewController.m */,
@@ -135,8 +137,6 @@
 				A4E4F1251801713800B21CA9 /* FTAppDelegate.m */,
 				A4E4F1271801713800B21CA9 /* Main_iPhone.storyboard */,
 				A4E4F12A1801713800B21CA9 /* Main_iPad.storyboard */,
-				A4E4F12D1801713800B21CA9 /* FTViewController.h */,
-				A4E4F12E1801713800B21CA9 /* FTViewController.m */,
 				A4082A4F1809514300D5ABB0 /* ViewControllers */,
 				A4E4F1301801713800B21CA9 /* Images.xcassets */,
 				A4E4F11C1801713800B21CA9 /* Supporting Files */,
@@ -276,7 +276,7 @@
 				A4E4F1261801713800B21CA9 /* FTAppDelegate.m in Sources */,
 				A4082A571809514300D5ABB0 /* FTCollectionViewController.m in Sources */,
 				A4E4F1221801713800B21CA9 /* main.m in Sources */,
-				A4E4F12F1801713800B21CA9 /* FTViewController.m in Sources */,
+				A4082A6F180C131900D5ABB0 /* FTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
