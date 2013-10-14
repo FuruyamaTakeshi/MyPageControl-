@@ -10,6 +10,4 @@
 
 @interface FTViewController : UIViewController <UIScrollViewDelegate>
 
-- (IBAction)changeValue:(id)sender;
-
 @end

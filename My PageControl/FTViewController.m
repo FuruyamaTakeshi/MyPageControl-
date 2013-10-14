@@ -7,7 +7,9 @@
 //
 
 #import "FTViewController.h"
-#import "MyViewController.h"
+
+#import "FTCollectionViewController.h"
+#import "FTNavigationViewController.h"
 
 @interface FTViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -15,7 +17,7 @@
 @property (nonatomic, strong) NSMutableArray *viewControllers;
 
 @end
-#define PAGE_MAX_COUNTS 10
+#define PAGE_MAX_COUNTS 30
 @implementation FTViewController
 
 - (void)viewDidLoad
@@ -36,13 +38,15 @@
     self.scrollView.pagingEnabled = YES;
     self.scrollView.contentSize =
     CGSizeMake(CGRectGetWidth(self.scrollView.frame) * numberPages, CGRectGetHeight(self.scrollView.frame));
-    self.scrollView.showsHorizontalScrollIndicator = NO;
-    self.scrollView.showsVerticalScrollIndicator = NO;
-    self.scrollView.scrollsToTop = NO;
+    self.scrollView.showsHorizontalScrollIndicator = YES;
+    self.scrollView.showsVerticalScrollIndicator = YES;
+    self.scrollView.scrollsToTop = YES;
     self.scrollView.delegate = self;
+    self.scrollView.backgroundColor = [UIColor grayColor];
     
     self.pageControl.numberOfPages = numberPages;
     self.pageControl.currentPage = 0;
+    [self loadScrollViewWithPage:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,14 +57,23 @@
 
 - (void)loadScrollViewWithPage:(NSUInteger)page
 {
+    LOG_METHOD
     if (page >= PAGE_MAX_COUNTS) {
         return;
     }
     // replace the placeholder if necessary
-    MyViewController *controller = [self.viewControllers objectAtIndex:page];
+    FTNavigationViewController *controller = [self.viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null])
     {
-        controller = [[MyViewController alloc] initWithPageNumber:page];
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        [flowLayout setItemSize:CGSizeMake(147.5, 128)];
+        [flowLayout setMinimumLineSpacing:5];
+        [flowLayout setMinimumInteritemSpacing:5];
+        [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+        FTCollectionViewController *collectionViewController = [[FTCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+        collectionViewController.pageNumber = page;
+        controller = [[FTNavigationViewController alloc] initWithRootViewController:collectionViewController];
+        controller.pageNumber = page;
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
     }
     
@@ -110,8 +123,4 @@
     [self.scrollView scrollRectToVisible:bounds animated:animated];
 }
 
-
-- (IBAction)changeValue:(id)sender {
-    [self gotoPage:YES];
-}
 @end
